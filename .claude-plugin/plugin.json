@@ -1,0 +1,15 @@
+{
+  "name": "aws-static-site",
+  "version": "0.1.0",
+  "description": "Deploy static sites with CI/CD (Hugo, Astro, 11ty)",
+  "author": {
+    "name": "Cyril Feraudet",
+    "url": "https://github.com/feraudet"
+  },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/yaccp/claude-plugin-aws-static-site",
+  "homepage": "https://github.com/yaccp/claude-plugin-aws-static-site",
+  "keywords": ["aws", "s3", "cloudfront", "static-site"],
+  "commands": "./commands/",
+  "skills": "./skills/"
+}
