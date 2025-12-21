@@ -1,0 +1,30 @@
+flowchart TB
+    subgraph INIT["1. INIT"]
+        I1["Detect SSG"] --> I2["Configure Build"] --> I3["Setup Domain"]
+    end
+
+    subgraph BUILD["2. BUILD"]
+        B1["Run Build Command"] --> B2["Generate Static Files"]
+    end
+
+    subgraph DEPLOY["3. DEPLOY"]
+        D1["Create S3 Bucket"] --> D2["Upload Files"]
+        D2 --> D3["Create CloudFront"]
+        D3 --> D4["Request SSL Cert"]
+        D4 --> D5["Configure DNS"]
+    end
+
+    subgraph LIVE["4. LIVE"]
+        L1["Site Available"]
+        L2["CDN Active"]
+        L3["SSL Enabled"]
+    end
+
+    INIT --> BUILD
+    BUILD --> DEPLOY
+    DEPLOY --> LIVE
+
+    style INIT fill:#e1f5fe,stroke:#01579b
+    style BUILD fill:#fff3e0,stroke:#e65100
+    style DEPLOY fill:#e8f5e9,stroke:#1b5e20
+    style LIVE fill:#c8e6c9,stroke:#2e7d32

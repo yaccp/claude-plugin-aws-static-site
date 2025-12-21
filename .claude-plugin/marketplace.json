@@ -1,23 +1,26 @@
 {
-  "name": "aws-static-site",
-  "description": "Deploy static sites with CI/CD (Hugo, Astro, 11ty)",
+  "name": "yaccp-aws-static-site",
+  "description": "Deploy static sites to AWS S3 + CloudFront with custom domains and SSL",
   "owner": {
     "name": "Cyril Feraudet",
     "url": "https://github.com/feraudet"
   },
   "metadata": {
-    "version": "0.1.0",
-    "description": "Deploy static sites with CI/CD (Hugo, Astro, 11ty)"
+    "version": "1.0.0",
+    "license": "Apache-2.0",
+    "repository": "https://github.com/yaccp/claude-plugin-aws-static-site",
+    "keywords": ["aws", "s3", "cloudfront", "static-site", "hugo", "astro", "11ty", "ssl", "cdn"],
+    "category": "deployment"
   },
   "plugins": [
     {
-      "name": "aws-static-site",
+      "name": "yaccp-aws-static-site",
       "source": "./",
-      "description": "Deploy static sites with CI/CD (Hugo, Astro, 11ty)",
-      "version": "0.1.0",
+      "description": "Deploy static sites to AWS S3 + CloudFront with custom domains and SSL",
+      "version": "1.0.0",
       "author": { "name": "Cyril Feraudet" },
       "license": "Apache-2.0",
-      "keywords": ["aws", "s3", "cloudfront", "static-site"],
+      "keywords": ["aws", "s3", "cloudfront", "static-site", "hugo", "astro", "11ty"],
       "category": "deployment"
     }
   ]
