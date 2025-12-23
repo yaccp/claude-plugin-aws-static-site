@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.0.1] - 2025-12-23
+
+### Fixed
+- Corrected command format in README and CLAUDE.md
+- Commands now use correct format: `/<plugin>:<plugin>-<command>`
+
 ## [1.0.0] - 2025-12-21
 
 ### Added

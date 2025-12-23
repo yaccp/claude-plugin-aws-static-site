@@ -1,6 +1,6 @@
 {
   "name": "yaccp-aws-static-site",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Deploy static sites to AWS S3 + CloudFront with custom domains and SSL",
   "author": {
     "name": "Cyril Feraudet",

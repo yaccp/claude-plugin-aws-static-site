@@ -30,35 +30,35 @@ claude plugin add yaccp/claude-plugin-aws-static-site
 
 ```bash
 # 1. Configure environment
-/yaccp-aws-static-site:env
+/yaccp-aws-static-site:yaccp-aws-static-site-env
 
 # 2. Initialize project
-/yaccp-aws-static-site:init
+/yaccp-aws-static-site:yaccp-aws-static-site-init
 
 # 3. Build your site (e.g., hugo --minify)
 
 # 4. Deploy to AWS
-/yaccp-aws-static-site:deploy
+/yaccp-aws-static-site:yaccp-aws-static-site-deploy
 ```
 
 ## Commands
 
 | Command | Description |
 |---------|-------------|
-| `/yaccp-aws-static-site:env` | Manage AWS environments (dev/staging/prod) |
-| `/yaccp-aws-static-site:init` | Initialize project with SSG detection |
-| `/yaccp-aws-static-site:deploy` | Build and deploy to S3 + CloudFront |
-| `/yaccp-aws-static-site:status` | Check infrastructure status |
-| `/yaccp-aws-static-site:doctor` | Diagnose configuration issues |
-| `/yaccp-aws-static-site:invalidate` | Invalidate CloudFront cache |
-| `/yaccp-aws-static-site:destroy` | Destroy all AWS resources |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-env` | Manage AWS environments (dev/staging/prod) |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-init` | Initialize project with SSG detection |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-deploy` | Build and deploy to S3 + CloudFront |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-status` | Check infrastructure status |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-doctor` | Diagnose configuration issues |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-invalidate` | Invalidate CloudFront cache |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-destroy` | Destroy all AWS resources |
 
 ## Interactive Prompts
 
 Each command guides you through configuration with interactive prompts:
 
 <details>
-<summary><strong>/yaccp-aws-static-site:init</strong></summary>
+<summary><strong>/yaccp-aws-static-site:yaccp-aws-static-site-init</strong></summary>
 
 ```
 ? Which static site generator are you using?
@@ -92,7 +92,7 @@ Proceed with initialization?
 </details>
 
 <details>
-<summary><strong>/yaccp-aws-static-site:deploy</strong></summary>
+<summary><strong>/yaccp-aws-static-site:yaccp-aws-static-site-deploy</strong></summary>
 
 ```
 Deployment Configuration
@@ -118,7 +118,7 @@ Proceed?
 </details>
 
 <details>
-<summary><strong>/yaccp-aws-static-site:status</strong></summary>
+<summary><strong>/yaccp-aws-static-site:yaccp-aws-static-site-status</strong></summary>
 
 ```
 Static Site Status Report
@@ -152,7 +152,7 @@ Custom Domain:   200 OK (52ms)
 </details>
 
 <details>
-<summary><strong>/yaccp-aws-static-site:doctor</strong></summary>
+<summary><strong>/yaccp-aws-static-site:yaccp-aws-static-site-doctor</strong></summary>
 
 ```
 Static Site Doctor Report
@@ -181,7 +181,7 @@ Status: All OK
 </details>
 
 <details>
-<summary><strong>/yaccp-aws-static-site:destroy</strong></summary>
+<summary><strong>/yaccp-aws-static-site:yaccp-aws-static-site-destroy</strong></summary>
 
 ```
 ⚠️  DESTRUCTION WARNING
@@ -236,10 +236,10 @@ Each environment can have:
 - Different S3 buckets and CloudFront distributions
 - Independent SSL certificates and DNS records
 
-Use `/yaccp-aws-static-site:env` to manage environments, or override with:
+Use `/yaccp-aws-static-site:yaccp-aws-static-site-env` to manage environments, or override with:
 ```bash
 export PLUGIN_ENV=staging
-/yaccp-aws-static-site:deploy
+/yaccp-aws-static-site:yaccp-aws-static-site-deploy
 ```
 
 ## Static Site Generators
@@ -309,7 +309,7 @@ Typical costs for a blog (~10K visitors/month):
 | Certificate pending | DNS validation required | Add CNAME record shown in `/status` |
 | 403 Forbidden | S3 bucket policy | Check OAC configuration |
 | 504 Gateway Timeout | CloudFront origin error | Verify S3 bucket exists |
-| Stale content | CloudFront cache | Run `/yaccp-aws-static-site:invalidate` |
+| Stale content | CloudFront cache | Run `/yaccp-aws-static-site:yaccp-aws-static-site-invalidate` |
 | Build failed | Missing dependencies | Run `npm install` or check SSG docs |
 
 ## CI/CD Integration

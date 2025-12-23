@@ -10,13 +10,13 @@ Supports Hugo, Astro, 11ty, Next.js static export, and plain HTML.
 
 | Command | Purpose |
 |---------|---------|
-| `/yaccp-aws-static-site:env` | Manage AWS environments (dev/staging/prod) |
-| `/yaccp-aws-static-site:init` | Initialize project with SSG detection |
-| `/yaccp-aws-static-site:deploy` | Build and deploy to S3 + CloudFront |
-| `/yaccp-aws-static-site:status` | Check infrastructure status |
-| `/yaccp-aws-static-site:doctor` | Diagnose configuration issues |
-| `/yaccp-aws-static-site:invalidate` | Invalidate CloudFront cache |
-| `/yaccp-aws-static-site:destroy` | Destroy all AWS resources |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-env` | Manage AWS environments (dev/staging/prod) |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-init` | Initialize project with SSG detection |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-deploy` | Build and deploy to S3 + CloudFront |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-status` | Check infrastructure status |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-doctor` | Diagnose configuration issues |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-invalidate` | Invalidate CloudFront cache |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-destroy` | Destroy all AWS resources |
 
 ## Key Files
 
