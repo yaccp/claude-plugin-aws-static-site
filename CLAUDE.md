@@ -17,6 +17,9 @@ Supports Hugo, Astro, 11ty, Next.js static export, and plain HTML.
 | `/yaccp-aws-static-site:yaccp-aws-static-site-doctor` | Diagnose configuration issues |
 | `/yaccp-aws-static-site:yaccp-aws-static-site-invalidate` | Invalidate CloudFront cache |
 | `/yaccp-aws-static-site:yaccp-aws-static-site-destroy` | Destroy all AWS resources |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-local-start` | Start local development server |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-local-stop` | Stop local development server |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-local-status` | Check local server status |
 
 ## Key Files
 
@@ -32,7 +35,10 @@ commands/
 ├── yaccp-aws-static-site-status.md
 ├── yaccp-aws-static-site-doctor.md
 ├── yaccp-aws-static-site-invalidate.md
-└── yaccp-aws-static-site-destroy.md
+├── yaccp-aws-static-site-destroy.md
+├── yaccp-aws-static-site-local-start.md
+├── yaccp-aws-static-site-local-stop.md
+└── yaccp-aws-static-site-local-status.md
 
 skills/yaccp-aws-static-site/
 └── SKILL.md

@@ -52,6 +52,9 @@ claude plugin add yaccp/claude-plugin-aws-static-site
 | `/yaccp-aws-static-site:yaccp-aws-static-site-doctor` | Diagnose configuration issues |
 | `/yaccp-aws-static-site:yaccp-aws-static-site-invalidate` | Invalidate CloudFront cache |
 | `/yaccp-aws-static-site:yaccp-aws-static-site-destroy` | Destroy all AWS resources |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-local-start` | Start local development server |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-local-stop` | Stop local development server |
+| `/yaccp-aws-static-site:yaccp-aws-static-site-local-status` | Check local server status |
 
 ## Interactive Prompts
 
