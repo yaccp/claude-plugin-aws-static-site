@@ -13,6 +13,5 @@
     "static",
     "site"
   ],
-  "commands": "./commands",
   "skills": "./skills"
 }

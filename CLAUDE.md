@@ -4,17 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Plugin Overview
 
-**Aws Static Site** - Deploy static sites to AWS S3 + CloudFront with custom domains and SSL
+**Aws Static Site** - Auto-discovered skill for contextual assistance.
 
-## Command
+## Usage
 
-Single entry point with interactive menu:
-
-```
-/aws-static-site:aws-static-site
-```
-
-This command handles all operations through AskUserQuestion menus.
+This plugin is automatically activated when relevant context is detected.
+No explicit command needed - just describe what you want to do.
 
 ## Configuration
 
@@ -26,10 +21,8 @@ All configuration stored in `.claude/yaccp/aws-static-site/config.json`.
 aws-static-site/
 ├── .claude-plugin/
 │   └── plugin.json       # Plugin metadata
-├── commands/
-│   └── aws-static-site.md         # Single entry point command
 ├── skills/
 │   └── aws-static-site/
-│       └── SKILL.md
+│       └── SKILL.md      # Skill with full workflow
 └── CLAUDE.md
 ```
